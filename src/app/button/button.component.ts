@@ -5,4 +5,6 @@ import { Component, Input } from '@angular/core';
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.css'],
 })
-export class ButtonComponent {}
+export class ButtonComponent {
+  @Input() style: { [index: string]: string };
+}
